@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-image: url(/img/wallpaperflare.com_wallpaper\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/***********************animation*********************/
+@keyframes box1 {
+  to {
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(5500px);
+  }
+}
+@keyframes logo {
+  to {
+    transform: scale(1);
+  }
+  from {
+    transform: scale(0.1);
+  }
+}
+/***********************logo********************/
+.logo1 {
+  position: fixed;
+  right: 0;
+  animation: logo 2s ease;
+}
+.logo1 img {
+  width: 200px;
+  height: 100px;
+  border-radius: 0 0 0 30px;
+}
+
+/**********************navbar**********************/
+.container1 .nav-bar {
+  background: rgba(117, 164, 137, 0.7);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 200px;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  /*background-color: rgb(196, 196, 196);*/
+}
+.container1 .nav-bar .logo {
+  margin: 10px;
+}
+.container1 .nav-bar .logo img {
+  width: 120px;
+  height: 80px;
+  border: solid rgb(58, 136, 136);
+  border-radius: 10%;
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+.container1 .nav-bar .logo img:hover {
+  filter: brightness(1);
+}
+.container1 .nav-bar .menu {
+  margin-top: 100px;
+  text-align: center;
+}
+.container1 .nav-bar .menu ul li {
+  margin: 5px 0;
+  padding: 20px 0;
+  color: #f2f2f2;
+  font-size: 23px;
+  cursor: pointer;
+}
+.container1 .nav-bar .menu ul li:hover {
+  background-color: rgba(58, 136, 136, 0.7);
+}
+.container1 .nav-bar .social-media {
+  display: flex;
+  justify-content: center;
+}
+.container1 .nav-bar .social-media .social {
+  position: fixed;
+  bottom: 0;
+}
+.container1 .nav-bar .social-media .social .fa {
+  font-size: 30px;
+  margin: 5px;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.container1 .nav-bar .social-media .social .fa:hover {
+  color: rgb(58, 136, 136);
+}
+
+/**********************box**********************/
+.container2 {
+  margin-top: 50px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 200px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+.container2 .div1 {
+  grid-area: 1/1/3/4;
+  margin: 10px;
+  border: solid #747474;
+  background: rgba(117, 164, 164, 0.7);
+  border-radius: 10px;
+  padding: 5px;
+  animation: box1 1s ease;
+}
+.container2 .div1 img {
+  width: 50px;
+  margin-right: 3px;
+  float: left;
+}
+.container2 .div1:hover {
+  background: rgb(117, 164, 164);
+}
+.container2 .div1:not(:hover) p {
+  display: none;
+  transition: 1s ease;
+}
+.container2 .div2 {
+  grid-area: 3/2/5/6;
+  border: solid #747474;
+  background: rgba(164, 142, 117, 0.7);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  animation: box1 1.5s ease;
+}
+.container2 .div2 img {
+  width: 50px;
+  margin-right: 3px;
+  float: left;
+}
+.container2 .div2:hover {
+  background: rgb(164, 142, 117);
+}
+.container2 .div2:not(:hover) p {
+  display: none;
+  transition: 1s ease;
+}
+.container2 .div3 {
+  grid-area: 5/1/7/5;
+  margin: 10px;
+  background: rgba(117, 124, 164, 0.7);
+  border: solid #747474;
+  border-radius: 10px;
+  padding: 5px;
+  animation: box1 2s ease;
+}
+.container2 .div3 img {
+  width: 50px;
+  margin-right: 3px;
+  float: left;
+}
+.container2 .div3:hover {
+  background: rgb(117, 124, 164);
+}
+.container2 .div3:not(:hover) p {
+  display: none;
+  transition: 1s ease;
+}
+
+/*****************pages*****************/
+.container3 {
+  display: none;
+  height: 300px;
+  position: fixed;
+  left: 200px;
+  top: 30%;
+  margin: 10px;
+  background: rgba(117, 164, 122, 0.7);
+  border: solid #747474;
+  border-radius: 10px;
+  padding: 5px;
+  animation: box1 1s ease;
+}
+.container3:hover {
+  background: rgb(117, 164, 122);
+}
+
+.container4 {
+  display: none;
+  height: 300px;
+  position: fixed;
+  left: 200px;
+  top: 30%;
+  margin: 10px;
+  background: rgba(164, 117, 137, 0.7);
+  border: solid #747474;
+  border-radius: 10px;
+  padding: 5px;
+  animation: box1 1s ease;
+}
+.container4:hover {
+  background: rgb(164, 117, 137);
+}
+.container4 iframe {
+  width: 60%;
+  height: 50%;
+  border-radius: 30px;
+}
+.container4 h4 {
+  margin: 10px 2px;
+}
+.container4:not(:hover) h4, .container4:not(:hover) iframe {
+  display: none;
+  transition: 1s ease;
+}
+
+.container5 {
+  display: none;
+  height: 300px;
+  position: fixed;
+  left: 200px;
+  top: 30%;
+  margin: 10px;
+  background: rgba(187, 167, 106, 0.7);
+  border: solid #747474;
+  border-radius: 10px;
+  padding: 5px;
+  animation: box1 1s ease;
+}
+.container5:hover {
+  background: rgb(187, 167, 106);
+}
+
+.container6 {
+  display: none;
+}
+
+/******************responsive********************/
+@media only screen and (max-width: 730px) {
+  .logo1 {
+    display: none;
+  }
+  .container2, .container3, .container4, .container5, .div1, .div2, .div3 {
+    overflow: scroll;
+  }
+  .container2::-webkit-scrollbar, .container3::-webkit-scrollbar, .container4::-webkit-scrollbar, .container5::-webkit-scrollbar, .div1::-webkit-scrollbar, .div2::-webkit-scrollbar, .div3::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .container1 .nav-bar {
+    width: auto;
+  }
+  .container2, .container3, .container4, .container5, .div1, .div2, .div3 {
+    left: 150px;
+    overflow: scroll;
+  }
+  .container2::-webkit-scrollbar, .container3::-webkit-scrollbar, .container4::-webkit-scrollbar, .container5::-webkit-scrollbar, .div1::-webkit-scrollbar, .div2::-webkit-scrollbar, .div3::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
+@media only screen and (max-height: 850px) {
+  .container2, .container3, .container4, .container5, .div1, .div2, .div3 {
+    overflow: scroll;
+  }
+  .container2::-webkit-scrollbar, .container3::-webkit-scrollbar, .container4::-webkit-scrollbar, .container5::-webkit-scrollbar, .div1::-webkit-scrollbar, .div2::-webkit-scrollbar, .div3::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
